@@ -30,15 +30,14 @@ class Bomb(pygame.sprite.Sprite):
         self.rect.y = random.randrange(10, height - self.rect.height - 10)
 
     def update(self, *pos):
-        self.rect = self.rect.move(random.randrange(3) - 1,
-                                   random.randrange(3) - 1)
+        # self.rect = self.rect.move(random.randrange(3) - 1,
+        #                            random.randrange(3) - 1)
         if pos:
             self.get_click(pos)
 
     def get_click(self, pos):
         if self.rect.collidepoint(pos):
             self.image = load_image('boom.png')
-
 
 
 def main():
