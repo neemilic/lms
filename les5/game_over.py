@@ -22,7 +22,7 @@ def load_image(name, colorkey=None):
 class Picture(pygame.sprite.Sprite):
     def __init__(self, *groop):
         super().__init__(*groop)
-        self.image = load_image('gameover.png')
+        self.image = load_image('game_over.png')
         self.rect = self.image.get_rect()
         self.rect.x = -600
         self.rect.y = 0
