@@ -26,7 +26,7 @@ now = 'r'
 class Car(pygame.sprite.Sprite):
     def __init__(self, *groop):
         super().__init__(*groop)
-        self.image = load_image('car.png')
+        self.image = load_image('car_.png')
         self.rect = self.image.get_rect()
         self.rect.x = 0
         self.rect.y = -10
